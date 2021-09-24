@@ -10,6 +10,7 @@ h1 {
     font-size: 10vw;
     margin-top: 3%;
     margin-bottom: 3%;
+    text-decoration: none;
 }
 
 h2 {
@@ -129,9 +130,12 @@ h3 {
 }
 
 .TestButtons {
-    margin-top: 3vw;
-    left: 50%;
+    margin: auto;
+    margin-left: 0vw;
+    margin-right: 40%;
+    display: block;
     text-align: center;
+    margin-bottom: 15vh;
 }
 
 .AlphatestAnswers{
@@ -151,6 +155,172 @@ h3 {
 }
 
 .Tryagainbtn{
-    margin-left: 0%;
     margin-left: 50%;
+}
+
+.physicshardlist {
+    text-align: left;
+    margin: auto;
+    margin-left: 5vw;
+    margin-right: 0vw;
+    display: block;
+    font-size: 3vw;
+    color: #FFFFFF;
+    height: 25vw;
+    width: 60vw;
+    z-index: 1;
+    left: 0;
+    top: 25vw;
+}
+
+.alphasubtext{
+    font-size: 2vw;
+    color: #FFFFFF;
+    text-align: center;
+}
+
+.button {
+	pointer-events: auto;
+	cursor: pointer;
+	background: #e7e7e7;
+	border: none;
+	padding: 0vw 5vw;
+	margin: 0;
+    margin-left: 40%;
+	font-family: inherit;
+	font-size: inherit;
+	position: relative;
+	display: inline-block;
+    text-align: center;
+    margin-top: 3vh;
+}
+
+.button::before,
+.button::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+a:focus,
+button:focus {
+	/* Provide a fallback style for browsers
+	 that don't support :focus-visible */
+	outline: none;
+}
+
+a:focus:not(:focus-visible),
+button:focus:not(:focus-visible) {
+	/* Remove the focus indicator on mouse-focus for browsers
+	 that do support :focus-visible */
+    outline-offset: 0vw;
+}
+
+a:focus-visible,
+button:focus-visible {
+	/* Draw a very noticeable focus style for
+	 keyboard-focus on browsers that do support
+	 :focus-visible */
+	outline: 0.5vw solid #443ffc;
+	outline-offset: 0.15vw;
+}
+
+
+.button--bestia {
+	font-family: freight-display-pro, serif;
+	font-size: 1.4vw;
+	color: #fff;
+	background: none;
+	padding: 0;
+}
+
+.button--bestia .button__bg {
+	top: 0;
+	left: 0;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	background: #e7e7e7;
+	border-radius: 3vw;
+	overflow: hidden;
+	transition: transform 0.4s cubic-bezier(0.1vw, 0, 0.3vw, 1vw);
+}
+
+.button--bestia:hover .button__bg {
+	transform: scale3d(1.2vw,1.2vw,1.2vw);
+}
+
+.button--bestia .button__bg::before,
+.button--bestia .button__bg::after {
+	content: '';
+	position: absolute;
+	background: #151515;
+}
+
+.button--bestia .button__bg::before {
+	width: 110%;
+	height: 0;
+	padding-bottom: 110%;
+	top: 50%;
+	left: 50%;
+	border-radius: 0%;
+	transform: translate3d(-50%,-50%,0) scale3d(0,0,1);
+}
+
+.button--bestia:hover .button__bg::before {
+	transition: transform 0.4s cubic-bezier(0.1, 0, 0.3, 1);
+	transform: translate3d(-50%,-50%,0) scale3d(1,1,1);
+}
+
+.button--bestia .button__bg::after {
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	opacity: 0;
+	transition: opacity 0.3s;
+}
+
+.button--bestia:hover .button__bg::after {
+	opacity: 1;
+	transition-duration: 0.01s;
+	transition-delay: 0.3s;
+}
+
+.button--bestia span {
+	display: block;
+	position: relative;
+	padding: 1.5vw 3vw;
+	mix-blend-mode: difference;
+}
+
+
+.fakeAlphaAdvert {
+    height: 40vw;
+    width: 40vw;
+    z-index: 2;
+    display: block;
+    padding-top: 0vw;
+    position: relative;
+    left: 53vw;
+    top: -28vw;
+    background-color: #999999;
+}
+
+.alphaAdimage{
+    display: block;
+    height: 65%;
+    margin: auto;
+}
+
+.alphaAdContact{
+    text-decoration: none;
+    text-align: center;
+    display: block;
+    margin: auto;
+    color: #FFFFFF;
+    background-color: black;
+    margin-top: 0.5vw;
+    font-size: 2vw;
 }

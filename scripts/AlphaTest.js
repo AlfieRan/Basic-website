@@ -10,7 +10,8 @@ FailedAlpha.hidden = true;
 Alpha.hidden = true;
 Sigma.hidden = true;
 
-function FailedTest(){
+function FailedTest(e){
+    e.preventDefault();
     console.log("Failed");
     formDocument.hidden = true;
     Alpha.hidden = true;
@@ -18,7 +19,8 @@ function FailedTest(){
     FailedAlpha.hidden = false;
 }
 
-function CalcResults(){
+function CalcResults(e){
+    e.preventDefault();
     var Score = 0;
     if (formDocument["Q1"].value === "alpha")
     {
@@ -42,23 +44,26 @@ function CalcResults(){
     }
 
     formDocument.hidden = true;
-    if (score < 4)
+    if (Score < 4)
     {
         FailedAlpha.hidden = false;
         Alpha.hidden = true;
         Sigma.hidden = true;
+        formDocument.hidden = true;
     }
-    else if(score == 4)
+    else if(Score == 4)
     {
         FailedAlpha.hidden = true;
         Alpha.hidden = false;
         Sigma.hidden = true;
+        formDocument.hidden = true;
     }
-    else if (score == 5)
+    else if (Score == 5)
     {
         FailedAlpha.hidden = true;
         Alpha.hidden = true;
         Sigma.hidden = false;
+        formDocument.hidden = true;
     }
 }
 

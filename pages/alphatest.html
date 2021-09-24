@@ -51,27 +51,37 @@
                 </div>
 
                 <div class="TestButtons">
-                    <button id="submitTest" onclick="FailedTest()">Submit</button>
-                    <button id="GetResults" onclick="CalcResults()">What's my Score?</button>
+                    <button id="submitTest" type="submit" onclick="FailedTest(event)" class="button button--bestia">
+                        <div class="button__bg"></div><span>Submit</span>
+                    </button>
+                    <button id="GetResults" type="submit" onclick="CalcResults(event)" class="button button--bestia">
+                        <div class="button__bg"></div><span>What's my Score?</span>
+                    </button>
                 </div>
             </form>
 
             <div id="FailedTestThing" hidden=true>
                 <h1 class="rainbow rainbow_text_animated biggerFont">You're no Alpha</h1>
                 <p class="betaText">You're a beta.</p>
-                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
+                <button id="RetryTest" onclick="RetryTest()" class="button button--bestia">
+                    <div class="button__bg"></div><span>Retry?</span>
+                </button>
             </div>
 
             <div id="AlphaStatus" hidden=true>
                 <h1 class="rainbow rainbow_text_animated biggerFont">You're an Alpha!</h1>
-                <p>You got 4/5 which means you have certified Alpha Status</p>
-                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
+                <p class="alphasubtext">You got 4/5 which means you have certified Alpha Status</p>
+                <button id="RetryTest" onclick="RetryTest()" class="button button--bestia">
+                    <div class="button__bg"></div><span>Retry?</span>
+                </button>
             </div>
 
             <div id="SigmaStatus" hidden=true>
                 <h1 class="rainbow rainbow_text_animated biggerFont">You're a Sigma!</h1>
                 <h2 class="rainbow rainbow_text_animated">You got 5/5 which means you're an absolute Sigma chad</h2>
-                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
+                <button id="RetryTest" onclick="RetryTest()" class="button button--bestia">
+                    <div class="button__bg"></div><span>Retry?</span>
+                </button>
             </div>
         </div>
     </body>
