@@ -56,10 +56,22 @@
                 </div>
             </form>
 
-            <div id="FailedTestThing" hidden=false>
+            <div id="FailedTestThing" hidden=true>
                 <h1 class="rainbow rainbow_text_animated biggerFont">You're no Alpha</h1>
                 <p class="betaText">You're a beta.</p>
-                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again</button>
+                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
+            </div>
+
+            <div id="AlphaStatus" hidden=true>
+                <h1 class="rainbow rainbow_text_animated biggerFont">You're an Alpha!</h1>
+                <p>You got 4/5 which means you have certified Alpha Status</p>
+                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
+            </div>
+
+            <div id="SigmaStatus" hidden=true>
+                <h1 class="rainbow rainbow_text_animated biggerFont">You're a Sigma!</h1>
+                <h2 class="rainbow rainbow_text_animated">You got 5/5 which means you're an absolute Sigma chad</h2>
+                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again?</button>
             </div>
         </div>
     </body>

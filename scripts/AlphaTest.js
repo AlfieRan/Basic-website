@@ -1,14 +1,20 @@
 
 let formDocument = document.forms['isUserAlpha'];
 let FailedAlpha = document.getElementById("FailedTestThing");
+let Alpha = document.getElementById("AlphaStatus");
+let Sigma = document.getElementById("SigmaStatus");
 
 console.log("it's alpha time");
 formDocument.hidden = false;
 FailedAlpha.hidden = true;
+Alpha.hidden = true;
+Sigma.hidden = true;
 
 function FailedTest(){
     console.log("Failed");
     formDocument.hidden = true;
+    Alpha.hidden = true;
+    Sigma.hidden = true;
     FailedAlpha.hidden = false;
 }
 
@@ -35,8 +41,25 @@ function CalcResults(){
         Score += 1;
     }
 
-
-    console.log(Score);
+    formDocument.hidden = true;
+    if (score < 4)
+    {
+        FailedAlpha.hidden = false;
+        Alpha.hidden = true;
+        Sigma.hidden = true;
+    }
+    else if(score == 4)
+    {
+        FailedAlpha.hidden = true;
+        Alpha.hidden = false;
+        Sigma.hidden = true;
+    }
+    else if (score == 5)
+    {
+        FailedAlpha.hidden = true;
+        Alpha.hidden = true;
+        Sigma.hidden = false;
+    }
 }
 
 function RetryTest(){
