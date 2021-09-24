@@ -136,8 +136,21 @@ h3 {
 
 .AlphatestAnswers{
     margin-top: 1vw;
+    margin-bottom: 1vw;
     left: 0%;
     width: 85%;
     padding:1vw 1vh;
     border-radius: 1vw;
+}
+
+.betaText{
+    font-size: 2vw;
+    color: #FFFFFF;
+    margin-left: 0%;
+    text-align: center;
+}
+
+.Tryagainbtn{
+    margin-left: 0%;
+    margin-left: 50%;
 }

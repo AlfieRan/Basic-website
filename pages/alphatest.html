@@ -23,16 +23,44 @@
         <div class="splitright">
             <h1 class="rainbow rainbow_text_animated biggerFont">Alpha Male Test</h1>
 
-            <form name="isUserAlpha">
-                <label class="AlphatestQuestions">What's better an Alpha or a Beta?</label>
-                <br>
-                <input class = "AlphatestAnswers" type="" name ="">
+            <form name="isUserAlpha" action="#" hidden=true>
+                <div>
+                    <label class="AlphatestQuestions">What's better an Alpha or a Beta?</label>
+                    <br>
+                    <input class = "AlphatestAnswers" type="text" name ="Q1">
+                </div>
+                <div>
+                    <label class="AlphatestQuestions">What's better: apples or oranges?</label>
+                    <br>
+                    <input class = "AlphatestAnswers" type="text" name ="Q2">
+                </div>
+                <div>
+                    <label class="AlphatestQuestions">Is Putin a good leader of Russia?</label>
+                    <br>
+                    <input class = "AlphatestAnswers" type="text" name ="Q3">
+                </div>
+                <div>
+                    <label class="AlphatestQuestions">How do you pronounce scone, scone or scone?</label>
+                    <br>
+                    <input class = "AlphatestAnswers" type="text" name ="Q4">
+                </div>
+                <div>
+                    <label class="AlphatestQuestions">Do you eat raw meat?</label>
+                    <br>
+                    <input class = "AlphatestAnswers" type="text" name ="Q5">
+                </div>
 
                 <div class="TestButtons">
                     <button id="submitTest" onclick="FailedTest()">Submit</button>
                     <button id="GetResults" onclick="CalcResults()">What's my Score?</button>
                 </div>
             </form>
+
+            <div id="FailedTestThing" hidden=false>
+                <h1 class="rainbow rainbow_text_animated biggerFont">You're no Alpha</h1>
+                <p class="betaText">You're a beta.</p>
+                <button id="RetryTest" onclick="RetryTest()" class="Tryagainbtn">Try again</button>
+            </div>
         </div>
     </body>
 </html>
