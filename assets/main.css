@@ -20,6 +20,13 @@ h2 {
     margin-bottom: 2%;
 }
 
+h3 {
+    color: #FFFFFF;
+    text-align: left;
+    font-size: 2vw;
+    margin-right: auto;
+}
+
 .EpicClassForAskingWhatAnImageIs {
     font-size: 1vw;
     margin-left: 5vw;
@@ -37,6 +44,7 @@ h2 {
 .homebtn {
     margin-top: 0vw;
     margin-left: 0vw;
+    width: 8vw;
 }
 
 .sigmastyle {
