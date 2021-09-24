@@ -24,7 +24,8 @@ h3 {
     color: #FFFFFF;
     text-align: left;
     font-size: 2vw;
-    margin-right: auto;
+    margin-right: 0;
+    margin-top: 0;
 }
 
 .EpicClassForAskingWhatAnImageIs {
@@ -48,10 +49,10 @@ h3 {
 }
 
 .sigmastyle {
-    width: 35%;
+    width: 100%;
     margin-left: 0vw;
-
 }
+
 .rainbow {
     font-size: 3vw;
     font-family: monospace;
@@ -84,4 +85,59 @@ h3 {
     50% {
         background-position: 100% 0;
     }
+}
+
+  /* Control the left side */
+  .splitleft {
+    height: 90%;
+    width: 32%;
+    position: fixed;
+    z-index: 1;
+    top: 15vh;
+    overflow-x: hidden;
+    left: 0;
+  }
+  
+  /* Control the right side */
+  .splitright {
+    height: 100%;
+    width: 65%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 10vh;
+    right: 0;
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+  }
+
+  .biggerFont{
+      font-size: 6vw;
+  }
+
+.AlphatestQuestions{
+    color: #FFFFFF;
+    font-size: 2vw;
+}
+
+.TestButtons {
+    margin-top: 3vw;
+    left: 50%;
+    text-align: center;
+}
+
+.AlphatestAnswers{
+    margin-top: 1vw;
+    left: 0%;
+    width: 85%;
+    padding:1vw 1vh;
+    border-radius: 1vw;
 }

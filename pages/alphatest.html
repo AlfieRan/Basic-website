@@ -12,16 +12,27 @@
     </head>
 
     <body>
-        <script src="../scripts/AlphaTest.js"></script>
+        <script src="../scripts/AlphaTest.js" defer></script>
 
         <a href="../index.html">
             <img src="../assets/home.png" class="homebtn">
         </a>
-        <h1 class="rainbow rainbow_text_animated">Alpha Male Test</h1>
-        <img src="../assets/manly-alpha.gif" class="sigmastyle">
-        <form>
-            <h3>Question 1</h3>
-        </form>
+        <div class="splitleft">
+            <img src="../assets/manly-alpha.gif" class="sigmastyle">
+        </div>
+        <div class="splitright">
+            <h1 class="rainbow rainbow_text_animated biggerFont">Alpha Male Test</h1>
 
+            <form name="isUserAlpha">
+                <label class="AlphatestQuestions">What's better an Alpha or a Beta?</label>
+                <br>
+                <input class = "AlphatestAnswers" type="" name ="">
+
+                <div class="TestButtons">
+                    <button id="submitTest" onclick="FailedTest()">Submit</button>
+                    <button id="GetResults" onclick="CalcResults()">What's my Score?</button>
+                </div>
+            </form>
+        </div>
     </body>
 </html>
