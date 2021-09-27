@@ -71,4 +71,6 @@ function RetryTest(){
     console.log("Trying Again");
     formDocument.hidden = false;
     FailedAlpha.hidden = true;
+    Sigma.hidden = true;
+    Alpha.hidden = true;
 }
